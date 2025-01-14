@@ -1,0 +1,19 @@
+
+.containerApp{
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+}
+
+.containerApp.light{
+    background-color: #FFFFFF;
+    color: #41444D;
+}
+.containerApp.dark{
+    background-color: #030712;
+    color: #FFFFFF;
+}
+
+.containerAppCentro{
+    width: 50%;
+}

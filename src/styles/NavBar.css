@@ -1,0 +1,37 @@
+@import url('https://fonts.googleapis.com/css2?family=Calistoga&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    font-family: "Inter", sans-serif;
+}
+.navbar.light{
+    background-color: #FFFFFF;
+    color: #41444D;
+}
+.navbar.dark{
+    background-color: #030712;
+    color: #FFFFFF;
+}
+.nav-links{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+    gap: 2rem;
+}
+.navbar img{
+    width: 24px;
+    height: 24px;
+    cursor: pointer;
+}
+li{
+    cursor: pointer;
+}
+

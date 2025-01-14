@@ -1,0 +1,79 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.workContainer{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 2rem;
+}
+
+.viewSelector{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 35px;
+    gap: 10px;
+    border-radius: 5px;
+}
+.workContainer.light .viewSelector{
+    background-color:#F3F4F6 ;
+}
+.workContainer.dark .viewSelector{
+    background-color:#1F2937 ;
+}
+
+.viewButton{
+    all: unset;
+    cursor: pointer;
+    height: 28px;
+    margin: 5px;
+    width: 50%;
+    text-align: center;
+    border-radius: 5px;
+    color: #747474;
+}
+
+.workContainer.light .viewButton.seleccionado{
+    background-color: #FFFFFF;
+    color: #000000;
+    box-shadow: 1px 1px 4px 1px #747474;
+}
+.workContainer.dark .viewButton.seleccionado{
+    background-color: #030712;
+    color: #ffffff;
+}
+
+.workInfo{
+    display: flex;
+    flex-direction: column;
+    padding-left: 50px;
+    border: 1px solid #919191;
+    border-radius: 5px;
+    height: 700px;
+}
+.workList{
+    display: flex;
+    border-left: 1px solid #919191;
+    height: 100%;
+}
+.workItem{
+    list-style: none;
+    cursor: pointer;
+    margin-left: 20px;
+    position: relative;
+}
+.experience{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.fechaExp{
+    font-size: small;
+    color: #747474;
+}
+.tituloExp{
+    font-weight: 700;
+}

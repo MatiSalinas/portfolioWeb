@@ -61,3 +61,14 @@ a{
 .svg.light{
     stroke: #000000;
 }
+
+.socials svg{
+    stroke: #aaaaaa;
+}
+
+.socials.dark svg:hover{
+    stroke: #ffffff;
+}
+.socials.light svg:hover{
+    stroke: #000000;
+}

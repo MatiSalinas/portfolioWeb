@@ -1,4 +1,4 @@
-const Experience = ({ fecha, trabajo, descripcion, puntos }) => {
+const Experience = ({ fecha, trabajo, descripcion, puntos, url_imagen, direccion="" }) => {
     return (
         <div className="experience">
             <p className="fechaExp">{fecha}</p>
@@ -9,6 +9,9 @@ const Experience = ({ fecha, trabajo, descripcion, puntos }) => {
                     <li key={index}>{punto}</li>
                 ))}
             </ul>
+            <a href={direccion} className="imgExp">
+                <img src={url_imagen} alt="LogoExperencia" />
+            </a>
         </div>
     );
 };

@@ -1,0 +1,148 @@
+@import url('https://fonts.googleapis.com/css2?family=Calistoga&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+.projectContainer{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: start;
+
+}
+.personalProjects {
+    height: fit-content;
+    margin-bottom: 100px;
+}
+
+.subTitulo {
+    font-family: 'Calistoga', serif;
+    margin-top: 1rem;
+}
+
+.project-card {
+    flex: 0 1 23%;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 1rem;
+    padding: 1rem;
+    transition: transform 0.2s;
+    min-height: 400px;
+    height: fit-content;
+    border: 1px solid #666;
+}
+
+.project-card.light {
+    background-color: #fff;
+    color: #000;
+}
+
+.project-card.dark {
+    background-color: #030712;
+    color: #fff;
+}
+
+.project-card:hover {
+    transform: scale(1.05);
+}
+
+.project-image {
+    border-radius: 8px;
+    object-position: center;
+    width: 300px;
+    height: 144px;
+}
+
+.project-title {
+    font-family: 'Inter', sans-serif;
+    font-size: 1.5rem;
+    margin: 0.5rem 0;
+}
+
+.project-description {
+    font-family: 'Inter', sans-serif;
+    font-size: 1rem;
+    color: #666;
+    margin: 0.5rem 0;
+}
+
+.project-technologies {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.project-technologies li {
+    
+    border-radius: 4px;
+    margin: 0.25rem;
+    padding: 0.5rem;
+    font-size: 0.875rem;
+}
+.project-technologies.light li{
+    background-color: #f0f0f0;
+
+}
+.project-technologies.dark li{
+    background-color: #1A2230;
+
+}
+
+
+
+.project-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    color: #0073e6;
+    margin-top: 1rem;
+    width: fit-content;
+    padding: 7px;
+    border-radius: 5px;
+    font-size: 12px;
+    font-weight: 700;
+
+}
+.project-link.light {
+    background-color: #1A2230;
+    color: #f1f2f3;
+}
+.project-link.dark {
+    background-color: #ffffff;
+    color: #000000;
+}
+
+.project-link-icon {
+    margin-right: 0.5rem;
+    width: 16px;
+    height: 16px;
+}
+
+.verMas{
+    display: flex;
+    height: 300px;
+    width: 50%;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+.verMas a{
+    display: flex;
+}
+
+@media (max-width: 800px) {
+    .project-card {
+        flex: 0 1 90%;
+    }
+    .projectContainer{
+        justify-content: center;
+    }
+
+    .project-image {
+        width: 100%;
+        height: auto;
+    }
+
+    .verMas {
+        width: 100%;
+        height: auto;
+    }
+}

@@ -52,28 +52,104 @@
     padding-left: 50px;
     border: 1px solid #919191;
     border-radius: 5px;
-    height: 700px;
+    height: fit-content;
 }
-.workList{
+.workList,.eduList{
     display: flex;
+    flex-direction: column;
     border-left: 1px solid #919191;
     height: 100%;
 }
-.workItem{
+.workItem,.eduItem{
     list-style: none;
     cursor: pointer;
-    margin-left: 20px;
+    margin-left: 30px;
     position: relative;
 }
 .experience{
     display: flex;
     flex-direction: column;
-    gap: 10px;
+    margin-left: 20px;
+    position: relative;
+    margin-bottom: 40px;
+    margin-top: 20px;
 }
-.fechaExp{
+.fechaExp,.descripcionExp{
     font-size: small;
     color: #747474;
 }
 .tituloExp{
     font-weight: 700;
+}
+
+.workPoints{
+    margin-left: 2rem;
+}
+.imgExp{
+    position: absolute;
+    width: 46px;
+    height: 46px;
+    border-radius: 50%;
+    background-color: #747474;
+    left: -74px;
+    top: 10px;
+}
+
+.imgExp img{
+    object-fit: cover;
+    width: 46px;
+    height: 46px;
+    border-radius: 50%;
+    box-shadow: 0px 0px 4px 1px #000000;
+}
+
+.imgExp img:hover{
+    box-shadow: 0px 0px 4px 2px #000000;
+}
+
+@media (max-width: 800px) {
+    .workContainer {
+        padding: 0 1rem;
+    }
+
+    .viewSelector {
+        flex-direction: column;
+        height: auto;
+        gap: 0;
+    }
+
+    .viewButton {
+        width: 100%;
+        margin: 5px 0;
+        padding: 0;
+
+    }
+    .viewButton.seleccionado{
+        margin: 10px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+
+    .workContainer.dark .viewButton.seleccionado{
+        box-shadow: 0px 0px 1px 1px  #EEE01E;
+    }
+
+    .workInfo {
+        padding-left: 2rem;
+    }
+
+    .workItem, .eduItem {
+        margin-left: 1rem;
+    }
+
+    .experience {
+        margin-left: 0;
+        margin-top: 80px;
+        margin-bottom: 0px;
+    }
+
+    .imgExp {
+        left: -40px;
+        top: -60px;
+    }
 }

@@ -1,20 +1,27 @@
 import { useContext, useState } from 'react'
 import { ThemeContext } from './utils/ThemeContext';
 import NavBar from './components/NavBar'
-import Inicio from './pages/inicio';
+import Footer from './components/Footer'
+import Inicio from './pages/Inicio';
 import './styles/App.css'
-import React from 'react';
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import Proyectos from './pages/AllProject';
 function App() {
   const { darkMode} = useContext(ThemeContext);
 
   return (
-      <div className={`containerApp ${darkMode ? "dark" : "light"}`}>
-      <div className="containerAppCentro">
-        <NavBar />
-        <Inicio />
+<Router>
+  <div className={`containerApp ${darkMode ? "dark" : "light"}`}>
+  <div className="containerAppCentro">
+  <NavBar />
+    <Routes>
+        <Route path='/' element={<Inicio />}/>
+        <Route path='/proyectos' element={<Proyectos />}/>
+    </Routes>
+<Footer />
       </div>
-
       </div>
+</Router>
     
   )
 }

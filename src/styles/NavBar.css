@@ -11,13 +11,22 @@
     align-items: center;
     padding: 10px 20px;
     font-family: "Inter", sans-serif;
+    position: sticky;
+    top: 0;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    -webkit-font-smoothing: antialiased;
+    -webkit-tap-highlight-color: transparent;
+    background-color: 70%;
+    backdrop-filter: blur(8px);
+    z-index: 50;
 }
 .navbar.light{
-    background-color: #FFFFFF;
+    background-color: rgba(255, 255, 255, 0.75);
     color: #41444D;
 }
 .navbar.dark{
-    background-color: #030712;
+    background-color: rgba(3, 7, 18,0.75);
     color: #FFFFFF;
 }
 .nav-links{
@@ -36,3 +45,17 @@ li{
     cursor: pointer;
 }
 
+@media (max-width: 800px) {
+    .navbar {
+        flex-direction: column;
+        padding: 20px;
+    }
+    .nav-links {
+        flex-direction: column;
+        gap: 1rem;
+    }
+    .navbar img {
+        width: 32px;
+        height: 32px;
+    }
+}

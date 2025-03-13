@@ -1,4 +1,4 @@
-import { useContext, useState } from 'react'
+import { useContext } from 'react'
 import { ThemeContext } from './utils/ThemeContext';
 import NavBar from './components/NavBar'
 import Footer from './components/Footer'

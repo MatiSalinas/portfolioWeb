@@ -7,7 +7,7 @@ const PersonalProjects = () =>{
         <div className="personalProjects">
             <motion.h2 className="subTitulo" initial={{translateX:'-150px'}} whileInView={{translateX:0}} transition={{duration:0.3}} viewport={{once:true}}>Proyectos Personales</motion.h2>
 
-            <motion.div className="projectContainer" initial={{rotateX:120}} whileInView={{rotateX:0}} transition={{duration:1}} viewport={{once:true}}>
+            <motion.div className="projectContainer" initial={{rotateX:50}} whileInView={{rotateX:0}} transition={{duration:1}} viewport={{once:true}}>
                 <Project
                 url_imagen='/images/pdv1.png'
                 titulo="Punto de venta para tienda de bebidas"
@@ -18,7 +18,7 @@ const PersonalProjects = () =>{
                 <Project
                 url_imagen='/images/bottiweb.png'
                 titulo="Pagina web, catalogo online"
-                descripcion='Pagina web con usuarios, panel de adminitracion, catalogo de productos, caja de comentarios y mas'
+                descripcion='Pagina web con usuarios, panel de adminitracion, catalogo de productos, caja de comentarios y mas.'
                 tecnologias={["Python","Django", "html","css"]}
                 links={{"url":"https://matixxdpls.pythonanywhere.com/productos/","svg":"/images/www.svg","texto":"Web"}}
                 />

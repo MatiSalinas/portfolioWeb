@@ -1,7 +1,7 @@
 import { ThemeContext } from '../utils/ThemeContext';
 import { useContext } from 'react';
 
-const Project = ({url_imagen,titulo,descripcion,tecnologias,links={"url":"","svg":"","texto":""}}) =>{
+const Project = ({url_imagen ,titulo ,descripcion ,tecnologias ,links={"url":"","svg":"","texto":""}}) =>{
     const { darkMode} = useContext(ThemeContext);
     return (
         <div className={`project-card ${darkMode ? "dark" : "light"}`}>

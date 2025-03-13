@@ -7,7 +7,7 @@ const FreelanceProjects = () =>{
         <div className="personalProjects">
             <motion.h2 className="subTitulo" initial={{translateX:'-150px'}} whileInView={{translateX:0}} transition={{duration:0.3}} viewport={{once:true}}>Proyectos Freelance</motion.h2>
 
-            <motion.div className="projectContainer" initial={{rotateX:120}} whileInView={{rotateX:0}} transition={{duration:1}} viewport={{once:true}}>
+            <motion.div className="projectContainer" initial={{rotateX:50}} whileInView={{rotateX:0}} transition={{duration:1}} viewport={{once:true}}>
             <Project
                 url_imagen='/images/obema.gif'
                 titulo="Landing page Obema S.A"
